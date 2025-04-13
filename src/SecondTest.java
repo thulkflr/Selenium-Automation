@@ -40,22 +40,37 @@ public void navigateToPIM() throws InterruptedException {
 	{
 		System.out.println("Doooooooooooooooooooooooone");	}
 	else {
-		System.out.println("faaaaail");	}
+		System.out.println("faaaaail");
+		
+	}
 	
 }
 
 
-@Test (priority =1)
-public void addNewPIM() throws InterruptedException {
+@Test (priority =3)
+public void addNewEmployee() throws InterruptedException {
+	driver.findElement(By.xpath("//a[text()='Add Employee']"))
+	.click();	
 	Thread.sleep(2000);
-	driver.findElement(By.xpath("//a[contains(@class, 'oxd-topbar-body-nav-tab-item') and text()='Add Employee']"))
-.click();
-	}
+	driver.findElement(By.name("firstName")).sendKeys("Thu Alkfl");
+	driver.findElement(By.name("middleName")).sendKeys("Mohammad");
+	driver.findElement(By.name("lastName")).sendKeys("Rababa'h");
+	driver.findElement(By.xpath("(//input[@data-v-1f99f73c])[5]")).clear();
+	Thread.sleep(500);
+
+	driver.findElement(By.xpath("(//input[@data-v-1f99f73c])[5]")).sendKeys("201998");
+
+	driver.findElement(By.xpath("//span[@data-v-8e4757dc]")).click();
+	driver.findElement(By.xpath("//span[@data-v-8e4757dc]")).click();
+	driver.findElement(By.xpath("//button[@type='submit']")).click();
+	
+}
 
 
 @AfterTest
-public void colse() {
-	
+public void colse() throws InterruptedException {
+	Thread.sleep(5000);
+	driver.quit();
 }
 
 	

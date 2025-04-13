@@ -6,8 +6,8 @@
       <class name="SecondTest">
         <methods>
           <include name="colse"/>
-          <include name="addNewPIM"/>
           <include name="setup"/>
+          <include name="addNewEmployee"/>
         </methods>
       </class> <!-- SecondTest -->
     </classes>
