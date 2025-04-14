@@ -7,72 +7,81 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class SecondTest {
-WebDriver driver =new ChromeDriver();
-String url="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
-@BeforeTest
-public void setup() {
-	driver.manage().window().maximize();
-	driver.get(url);
-	
-}
+	WebDriver driver = new ChromeDriver();
+	String username = "Admin";
+	String password = "admin123";
+	String url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 
-@Test (priority =1)
-public void login() throws InterruptedException {
-	Thread.sleep(2000);
-	driver.findElement(By.name("username")).sendKeys("Admin");
-	driver.findElement(By.name("password")).sendKeys("admin123");
-	//driver.findElement(By.("")).click();
-	
-driver.findElement(By.xpath("//button[@type='submit']")).click();
-}
+	@BeforeTest
+	public void setup() {
+		driver.manage().window().maximize();
+		driver.get(url);
 
-
-@Test (priority =2)
-public void navigateToPIM() throws InterruptedException {
-	Thread.sleep(2000);
-
-	driver.findElement(By.xpath("//span[text()='PIM']")).click();
-	Thread.sleep(2000);
-
-	System.out.println("title is: " +driver.getTitle());
-	WebElement element= driver.findElement(By.xpath("//h6[text()='PIM']"));
-	if(element.isDisplayed())
-	{
-		System.out.println("Doooooooooooooooooooooooone");	}
-	else {
-		System.out.println("faaaaail");
-		
 	}
-	
-}
 
+	@Test(priority = 1)
+	public void login() throws InterruptedException {
+		Thread.sleep(2000);
+		WebElement userName = driver.findElement(By.name("username"));
+		userName.sendKeys(username);
+		WebElement passwordFiled = driver.findElement(By.name("password"));
+		passwordFiled.sendKeys(password);
+		// driver.findElement(By.("")).click();
 
-@Test (priority =3)
-public void addNewEmployee() throws InterruptedException {
-	driver.findElement(By.xpath("//a[text()='Add Employee']"))
-	.click();	
-	Thread.sleep(2000);
-	driver.findElement(By.name("firstName")).sendKeys("Thu Alkfl");
-	driver.findElement(By.name("middleName")).sendKeys("Mohammad");
-	driver.findElement(By.name("lastName")).sendKeys("Rababa'h");
-	driver.findElement(By.xpath("(//input[@data-v-1f99f73c])[5]")).clear();
-	Thread.sleep(500);
+		WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']"));
+		loginButton.click();
+	}
 
-	driver.findElement(By.xpath("(//input[@data-v-1f99f73c])[5]")).sendKeys("201998");
+	@Test(priority = 2)
+	public void navigateToPIM() throws InterruptedException {
+		Thread.sleep(2000);
 
-	driver.findElement(By.xpath("//span[@data-v-8e4757dc]")).click();
-	driver.findElement(By.xpath("//span[@data-v-8e4757dc]")).click();
-	driver.findElement(By.xpath("//button[@type='submit']")).click();
-	
-}
+		WebElement PIMButton = driver.findElement(By.xpath("//span[text()='PIM']"));
+		PIMButton.click();
+		Thread.sleep(2000);
 
+		System.out.println("title is: " + driver.getTitle());
+		WebElement element = driver.findElement(By.xpath("//h6[text()='PIM']"));
+		if (element.isDisplayed()) {
+			System.out.println("Doooooooooooooooooooooooone");
+		} else {
+			System.out.println("faaaaail");
 
-@AfterTest
-public void colse() throws InterruptedException {
-	Thread.sleep(4000);
-	driver.quit();
-}
+		}
 
-	
-	
+	}
+
+	@Test(priority = 3)
+	public void addNewEmployee() throws InterruptedException {
+		WebElement addEmpButton = driver.findElement(By.xpath("//a[text()='Add Employee']"));
+		addEmpButton.click();
+		Thread.sleep(2000);
+		WebElement firstNameFiled = driver.findElement(By.name("firstName"));
+		firstNameFiled.sendKeys("Thu Alkfl");
+		WebElement middleNameFiled = driver.findElement(By.name("middleName"));
+		middleNameFiled.sendKeys("Mohammad");
+		WebElement lastNameFiled = driver.findElement(By.name("lastName"));
+		lastNameFiled.sendKeys("Rababa'h");
+		Thread.sleep(500);
+		WebElement clearField = driver.findElement(By.xpath("(//input[@data-v-1f99f73c])[5]"));
+		clearField.clear();
+
+		WebElement idField = driver.findElement(By.xpath("(//input[@data-v-1f99f73c])[5]"));
+		idField.sendKeys("201998");
+
+		WebElement toggleButton = driver.findElement(By.xpath("//span[@data-v-8e4757dc]"));
+		toggleButton.click();
+		toggleButton.click();
+
+		WebElement submitButton = driver.findElement(By.xpath("//button[@type='submit']"));
+		submitButton.click();
+
+	}
+
+	@AfterTest
+	public void colse() throws InterruptedException {
+		Thread.sleep(4000);
+		driver.quit();
+	}
+
 }

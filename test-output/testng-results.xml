@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٣٣ EET" name="Default suite" finished-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٤٩ EET" duration-ms="15708">
+  <suite started-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٣٤ EET" name="Default suite" finished-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٥٠ EET" duration-ms="16166">
     <groups>
     </groups>
-    <test started-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٣٣ EET" name="Default test" finished-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٤٩ EET" duration-ms="15708">
+    <test started-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٣٤ EET" name="Default test" finished-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٥٠ EET" duration-ms="16166">
       <class name="SecondTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:SecondTest@64ba3208]" started-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٣٣ EET" name="setup" finished-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٣٥ EET" duration-ms="2151" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:SecondTest@23fb172e]" started-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٣٤ EET" name="setup" finished-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٣٦ EET" duration-ms="1997" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:1, instance:SecondTest@64ba3208]" started-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٣٥ EET" name="login" finished-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٣٩ EET" duration-ms="3499" status="PASS">
+        <test-method signature="login()[pri:1, instance:SecondTest@23fb172e]" started-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٣٦ EET" name="login" finished-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٣٨ EET" duration-ms="2172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="navigateToPIM()[pri:2, instance:SecondTest@64ba3208]" started-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٣٩ EET" name="navigateToPIM" finished-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٤٣ EET" duration-ms="4654" status="PASS">
+        <test-method signature="navigateToPIM()[pri:2, instance:SecondTest@23fb172e]" started-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٣٨ EET" name="navigateToPIM" finished-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٤٣ EET" duration-ms="4644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToPIM -->
-        <test-method signature="addNewEmployee()[pri:3, instance:SecondTest@64ba3208]" started-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٤٣ EET" name="addNewEmployee" finished-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٤٧ EET" duration-ms="3200" status="PASS">
+        <test-method signature="addNewEmployee()[pri:3, instance:SecondTest@23fb172e]" started-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٤٣ EET" name="addNewEmployee" finished-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٤٦ EET" duration-ms="3144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewEmployee -->
-        <test-method is-config="true" signature="colse()[pri:0, instance:SecondTest@64ba3208]" started-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٤٧ EET" name="colse" finished-at="٢٠٢٥-٠٤-١٣T٢١:١٣:٤٩ EET" duration-ms="2181" status="PASS">
+        <test-method is-config="true" signature="colse()[pri:0, instance:SecondTest@23fb172e]" started-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٤٦ EET" name="colse" finished-at="٢٠٢٥-٠٤-١٤T٢١:٤٣:٥٠ EET" duration-ms="4183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- colse -->
