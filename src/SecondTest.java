@@ -69,7 +69,7 @@ public void addNewEmployee() throws InterruptedException {
 
 @AfterTest
 public void colse() throws InterruptedException {
-	Thread.sleep(5000);
+	Thread.sleep(4000);
 	driver.quit();
 }
 
