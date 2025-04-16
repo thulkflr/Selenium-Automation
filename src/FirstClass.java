@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import java.util.List;
 
 public class FirstClass {
 	WebDriver driver = new ChromeDriver();
@@ -33,21 +34,37 @@ public class FirstClass {
 	}
 
 	@Test(priority = 2)
-	public void addRandomItemToTheCart() {
+	public void addAllItemsToTheCart() {
 
-		WebElement addButton = driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
-		addButton.click();
+		List<WebElement> addButtons = driver.findElements(By.className("btn"));
+		for (int i = 0; i < addButtons.size(); i++) {
+			addButtons.get(i).click();
+
+		}
+
 	}
 
 	@Test(priority = 3)
-	public void removeTheItemFromTheCart() throws InterruptedException {
+	public void removeAllItemsFromTheCart() throws InterruptedException {
 		Thread.sleep(3000);
-		WebElement removeButton = driver.findElement(By.id("remove-sauce-labs-backpack"));
-		removeButton.click();
+		List<WebElement> removeButtons = driver.findElements(By.className("btn_secondary"));
+		for (int i = 0; i < removeButtons.size(); i++) {
+			removeButtons.get(i).click();
+		}
+
+	}
+String firstLetter="";
+	@Test(priority = 4)
+	public void getFirstLetterOfEachItem() {
+		List<WebElement> itemsNames = driver.findElements(By.className("inventory_item_name"));
+		for (int i = 0; i < itemsNames.size(); i++) {
+			firstLetter=itemsNames.get(i).getText();
+			System.out.println("the first char of"+firstLetter + " is: "+ firstLetter.charAt(0));
+		}
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void logout() throws InterruptedException {
 		WebElement burgerMenu = driver.findElement(By.id("react-burger-menu-btn"));
 		burgerMenu.click();

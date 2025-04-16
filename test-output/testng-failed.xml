@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SecondTest">
+      <class name="FirstClass">
         <methods>
-          <include name="colse"/>
-          <include name="navigateToPIM"/>
+          <include name="close"/>
+          <include name="getFirstLetterOfEachItem"/>
           <include name="setup"/>
-          <include name="addNewEmployee"/>
-          <include name="login"/>
         </methods>
-      </class> <!-- SecondTest -->
+      </class> <!-- FirstClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

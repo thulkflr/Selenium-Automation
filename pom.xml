@@ -16,7 +16,12 @@
     <version>7.11.0</version>
     <scope>test</scope>
 </dependency>
-  
+
+  	<dependency>
+  		<groupId>selenium-hrm-project</groupId>
+  		<artifactId>hrm-project</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
   
   

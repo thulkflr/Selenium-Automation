@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\thoth\AppData\Local\Temp\testng-eclipse-457276795\testng-customsuite.xml</span>
+                    <span>C:\Users\thoth\AppData\Local\Temp\testng-eclipse-574348418\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="FirstClass" class="method navigator-link" hash-for-method="addRandomItemToTheCart">addRandomItemToTheCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="FirstClass" class="method navigator-link" hash-for-method="addAllItemsToTheCart">addAllItemsToTheCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="FirstClass" class="method navigator-link" hash-for-method="getFirstLetterOfEachItem">getFirstLetterOfEachItem</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -118,7 +123,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="FirstClass" class="method navigator-link" hash-for-method="removeTheItemFromTheCart">removeTheItemFromTheCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="FirstClass" class="method navigator-link" hash-for-method="removeAllItemsFromTheCart">removeAllItemsFromTheCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -141,9 +146,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addRandomItemToTheCart">
-                  </a> <!-- addRandomItemToTheCart -->
-                  <span class="method-name">addRandomItemToTheCart</span>
+                  <a name="addAllItemsToTheCart">
+                  </a> <!-- addAllItemsToTheCart -->
+                  <span class="method-name">addAllItemsToTheCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getFirstLetterOfEachItem">
+                  </a> <!-- getFirstLetterOfEachItem -->
+                  <span class="method-name">getFirstLetterOfEachItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -162,9 +174,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="removeTheItemFromTheCart">
-                  </a> <!-- removeTheItemFromTheCart -->
-                  <span class="method-name">removeTheItemFromTheCart</span>
+                  <a name="removeAllItemsFromTheCart">
+                  </a> <!-- removeAllItemsFromTheCart -->
+                  <span class="method-name">removeAllItemsFromTheCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,7 +184,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\thoth\AppData\Local\Temp\testng-eclipse-457276795\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\thoth\AppData\Local\Temp\testng-eclipse-574348418\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -221,23 +233,27 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logout')
 data.setCell(0, 2, 'FirstClass')
-data.setCell(0, 3, 4127);
+data.setCell(0, 3, 4117);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'FirstClass')
-data.setCell(1, 3, 3187);
+data.setCell(1, 3, 3183);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'removeTheItemFromTheCart')
+data.setCell(2, 1, 'removeAllItemsFromTheCart')
 data.setCell(2, 2, 'FirstClass')
-data.setCell(2, 3, 3042);
+data.setCell(2, 3, 3181);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addRandomItemToTheCart')
+data.setCell(3, 1, 'addAllItemsToTheCart')
 data.setCell(3, 2, 'FirstClass')
-data.setCell(3, 3, 47);
+data.setCell(3, 3, 188);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getFirstLetterOfEachItem')
+data.setCell(4, 2, 'FirstClass')
+data.setCell(4, 3, 49);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -275,23 +291,27 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">1012 ms</span>
+                <span class="method-start">841 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">addRandomItemToTheCart</span>
-                <span class="method-start">4202 ms</span>
+                <span class="method-name">addAllItemsToTheCart</span>
+                <span class="method-start">4029 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">removeTheItemFromTheCart</span>
-                <span class="method-start">4251 ms</span>
+                <span class="method-name">removeAllItemsFromTheCart</span>
+                <span class="method-start">4219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getFirstLetterOfEachItem</span>
+                <span class="method-start">7402 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">7293 ms</span>
+                <span class="method-start">7453 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">11422 ms</span>
+                <span class="method-start">11572 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
