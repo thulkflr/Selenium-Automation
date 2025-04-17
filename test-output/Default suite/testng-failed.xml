@@ -5,8 +5,8 @@
     <classes>
       <class name="FirstClass">
         <methods>
+          <include name="ignoreTheItemsNamesThatsEndWithT"/>
           <include name="close"/>
-          <include name="getFirstLetterOfEachItem"/>
           <include name="setup"/>
         </methods>
       </class> <!-- FirstClass -->

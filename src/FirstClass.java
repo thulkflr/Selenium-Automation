@@ -53,18 +53,37 @@ public class FirstClass {
 		}
 
 	}
-String firstLetter="";
-	@Test(priority = 4)
+
+	@Test(priority = 4, enabled = false)
 	public void getFirstLetterOfEachItem() {
 		List<WebElement> itemsNames = driver.findElements(By.className("inventory_item_name"));
 		for (int i = 0; i < itemsNames.size(); i++) {
-			firstLetter=itemsNames.get(i).getText();
-			System.out.println("the first char of"+firstLetter + " is: "+ firstLetter.charAt(0));
+			fullName = itemsNames.get(i).getText();
+			System.out.println("the first char of " + fullName + " is: " + fullName.charAt(0));
 		}
 
 	}
 
+	String fullName = "";
+
 	@Test(priority = 5)
+	public void ignoreTheItemsNamesThatsEndWithT() {
+		List<WebElement> itemsNames = driver.findElements(By.className("inventory_item_name"));
+		for (int i = 0; i < itemsNames.size(); i++) {
+			fullName = itemsNames.get(i).getText();
+
+			if (fullName.endsWith("t")) {
+				continue;
+
+			} else {
+				System.out.println("Item name is: " + fullName);
+
+			}
+		}
+
+	}
+
+	@Test(priority = 6)
 	public void logout() throws InterruptedException {
 		WebElement burgerMenu = driver.findElement(By.id("react-burger-menu-btn"));
 		burgerMenu.click();
