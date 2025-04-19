@@ -2,36 +2,36 @@
 <testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="٢٠٢٥-٠٤-١٧T٢١:١١:٥٤ EET" name="Default suite" finished-at="٢٠٢٥-٠٤-١٧T٢١:١٢:٠٦ EET" duration-ms="11664">
+  <suite started-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٢٢ EET" name="Default suite" finished-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٣٤ EET" duration-ms="11931">
     <groups>
     </groups>
-    <test started-at="٢٠٢٥-٠٤-١٧T٢١:١١:٥٤ EET" name="Default test" finished-at="٢٠٢٥-٠٤-١٧T٢١:١٢:٠٦ EET" duration-ms="11664">
+    <test started-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٢٢ EET" name="Default test" finished-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٣٤ EET" duration-ms="11931">
       <class name="FirstClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:FirstClass@7e7b159b]" started-at="٢٠٢٥-٠٤-١٧T٢١:١١:٥٤ EET" name="setup" finished-at="٢٠٢٥-٠٤-١٧T٢١:١١:٥٥ EET" duration-ms="777" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:FirstClass@37efd131]" started-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٢٢ EET" name="setup" finished-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٢٣ EET" duration-ms="1009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:1, instance:FirstClass@7e7b159b]" started-at="٢٠٢٥-٠٤-١٧T٢١:١١:٥٥ EET" name="login" finished-at="٢٠٢٥-٠٤-١٧T٢١:١١:٥٨ EET" duration-ms="3174" status="PASS">
+        <test-method signature="login()[pri:1, instance:FirstClass@37efd131]" started-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٢٣ EET" name="login" finished-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٢٦ EET" duration-ms="3184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="addAllItemsToTheCart()[pri:2, instance:FirstClass@7e7b159b]" started-at="٢٠٢٥-٠٤-١٧T٢١:١١:٥٨ EET" name="addAllItemsToTheCart" finished-at="٢٠٢٥-٠٤-١٧T٢١:١١:٥٨ EET" duration-ms="209" status="PASS">
+        <test-method signature="addAllItemsToTheCart()[pri:2, instance:FirstClass@37efd131]" started-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٢٦ EET" name="addAllItemsToTheCart" finished-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٢٧ EET" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAllItemsToTheCart -->
-        <test-method signature="removeAllItemsFromTheCart()[pri:3, instance:FirstClass@7e7b159b]" started-at="٢٠٢٥-٠٤-١٧T٢١:١١:٥٨ EET" name="removeAllItemsFromTheCart" finished-at="٢٠٢٥-٠٤-١٧T٢١:١٢:٠١ EET" duration-ms="3192" status="PASS">
+        <test-method signature="removeAllItemsFromTheCart()[pri:3, instance:FirstClass@37efd131]" started-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٢٧ EET" name="removeAllItemsFromTheCart" finished-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٣٠ EET" duration-ms="3187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeAllItemsFromTheCart -->
-        <test-method signature="ignoreTheItemsNamesThatsEndWithT()[pri:5, instance:FirstClass@7e7b159b]" started-at="٢٠٢٥-٠٤-١٧T٢١:١٢:٠١ EET" name="ignoreTheItemsNamesThatsEndWithT" finished-at="٢٠٢٥-٠٤-١٧T٢١:١٢:٠٢ EET" duration-ms="47" status="PASS">
+        <test-method signature="ignoreTheItemsNamesThatsEndWithT()[pri:5, instance:FirstClass@37efd131]" started-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٣٠ EET" name="ignoreTheItemsNamesThatsEndWithT" finished-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٣٠ EET" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ignoreTheItemsNamesThatsEndWithT -->
-        <test-method signature="logout()[pri:6, instance:FirstClass@7e7b159b]" started-at="٢٠٢٥-٠٤-١٧T٢١:١٢:٠٢ EET" name="logout" finished-at="٢٠٢٥-٠٤-١٧T٢١:١٢:٠٦ EET" duration-ms="4097" status="PASS">
+        <test-method signature="logout()[pri:6, instance:FirstClass@37efd131]" started-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٣٠ EET" name="logout" finished-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٣٤ EET" duration-ms="4094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="close()[pri:0, instance:FirstClass@7e7b159b]" started-at="٢٠٢٥-٠٤-١٧T٢١:١٢:٠٦ EET" name="close" finished-at="٢٠٢٥-٠٤-١٧T٢١:١٢:٠٦ EET" duration-ms="140" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:FirstClass@37efd131]" started-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٣٤ EET" name="close" finished-at="٢٠٢٥-٠٤-١٩T١٥:٥٨:٣٤ EET" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
